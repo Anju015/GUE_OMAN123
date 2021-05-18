@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Registration</title>
+</head>
+<body>
+    {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>signup</title>
+</head>
+<body>
+<center>
+    <form action="/custreg" name="custreg" method="post">
+        {% csrf_token %}
+            <h2>Customer Registration</h2>
+            <h3>Name : <input type="text" name="name" required><br><br>
+            Address :<input type="text" name="address" required> <br><br>
+            Contact:<input type="text" name="contact" required> <br><br>
+
+            Email: <input type="email" name="email">        <br><br>
+
+            User name:<input type="text" name="uname"><br><br>
+            Password:<input type="password" name="
+
+            password1"><br><br>
+                <input type="submit" name="submit" value="Submit"></h3>
+        <h2>{{reg}}</h2>
+
+    </form>
+
+</center>
+</body>
+</html>

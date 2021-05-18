@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>view employee list</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Designation</th>
+            <th>Gender</th>
+            <th>Email</th>
+            <th>Phone number</th>
+            <th>Department</th>
+            <th>Date of Joining</th>
+            <th>Salary</th>
+            <th>UserName</th>
+            <th>Password</th>
+        </tr>
+        {% for ls in data %}
+        <tr>
+            <td>{{ls.empname}}</td>
+            <td>{{ls.age}}</td>
+            <td>{{ls.designation}}</td>
+            <td>{{ls.gender}}</td>
+            <td>{{ls.email}}</td>
+            <td>{{ls.phone}}</td>
+            <td>{{ls.dept}}</td>
+            <td>{{ls.dtime}}</td>
+            <td>{{ls.salary}}</td>
+            <td>{{ls.uname}}</td>
+            <td>{{ls.passwd}}</td>
+        </tr>
+
+        {% endfor %}
+
+    </table>
+</body>
+</html>

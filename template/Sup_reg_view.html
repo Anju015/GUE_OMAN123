@@ -1,0 +1,33 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Supplier Details</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Supplier Name</th>
+            <th>Product Id</th>
+            <th>Product Name</th>
+            <th>Contact</th>
+            <th>Salary</th>
+
+        </tr>
+        {% for ls in data %}
+        <tr>
+            <td>{{ls.supName}}</td>
+            <td>{{ls.pdtId}}</td>
+            <td>{{ls.pdtName}}</td>
+            <td>{{ls.contact}}</td>
+            <td>{{ls.salary}}</td>
+
+        </tr>
+
+        {% endfor %}
+
+    </table>
+
+</body>
+</html>

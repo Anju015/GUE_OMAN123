@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Registration</title>
+</head>
+<body>
+    {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Management</title>
+</head>
+<body>
+<center>
+    <form action="/pdtmanagement" name="pdtmngmnt" method="post">
+        {% csrf_token %}
+            <h2>Product Details</h2>
+            <h3>Product Name : <input type="text" name="pdtname" required><br><br>
+             Product Image :<input type="image" name="pdtimage" required> <br><br>
+            Price:<input type="text" name="pdtprice" required> <br><br>
+
+            tax: <input type="text" name="pdttax">        <br><br>
+
+            Quality:<input type="text" name="pdtquality"><br><br>
+            Stock id:<input type="text" name="stockid"><br><br>
+            Status :<input type="text" name="status"> <br><br>
+                <input type="submit" name="submit" value="Submit"></h3>
+        <h2>{{reg}}</h2>
+
+    </form>
+    <a href="/viewcustomer">View Registered</a>
+</center>
+</body>
+</html>

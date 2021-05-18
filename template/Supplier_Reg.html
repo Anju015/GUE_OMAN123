@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Supplier Registration</title>
+</head>
+<body>
+<center>
+    <form action="/supreg" name="supplierreg" method="post">
+        {% csrf_token %}
+            <h2>Supplier Registration</h2>
+            Supplier Name : <input type="text" name="supName" required><br>
+            Contact:<input type="text" name="contact"><br>
+            Payment:<input type="text"name="payment"><br>
+            <input type="submit" name="submit" value="Submit">
+        <h2>{{reg}}</h2>
+
+    </form>
+    <!--<a href="/supdvw">View Registered</a>-->
+</center>
+</body>
+</html>
